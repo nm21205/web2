@@ -577,3 +577,70 @@ align-items: center;
   width: 900px;
   outline: 1px solid red;
 }
+
+.title_a {
+  font-size: 35px;
+  font-weight: bold;
+}
+.title_int {
+  padding-left:20px;
+  font-size: 14px;
+}
+
+
+
+.se_one > div > button {
+  border-radius: 20px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-top: 15px;
+  width: 80px;
+  height: 25px;
+  font-size: 15px;
+  margin-bottom: 30px;
+ cursor: pointer;
+}
+
+.se_one > div > button:hover {
+  background-color:mediumblue;
+  transition: 0.2s;
+}
+
+.se_one > div > p {
+  font-size: 18px;
+  margin-top: 40px;
+  margin-right: 80px;
+  margin-bottom: 50px;
+}
+
+
+.se_one > div > a {
+  margin-top: 40px;
+  font-size: 20px;
+  
+}
+
+
+.se_two > div { border-bottom: 1px solid white;
+  position: relative;
+  height: 100px;
+  margin-top: 60px;
+}
+
+
+.se_two > div > .title_b {font-size:50px;
+  margin-top: 40px;
+}
+
+.se_two > div > .title_bint {font-size:10px;
+  padding-right: 0;
+  margin-right: 0px;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  top: 27px;
+  right: 10px;
+}
+
+
