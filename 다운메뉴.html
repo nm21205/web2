@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .sub{display:none;}
+/*1차메뉴의 a요소에 마우스를 올리면 그 다음형제요소인 .sub을 화면에 표시*/
+/*.1차 메뉴의 */
+    .menu-box>ul>li:hover >.sub{display:block;}
+    /*1차 메뉴에 마우스를 올리면 배경색 적용*/
+    .menu-box>ul>li>a:hover {background-color: gold;}
+    /*2차 메뉴에 마우스를 올리면 배경색 적용하기*/
+    .sub> li>a:hover {background-color: pink;}
+  </style>
+</head>
+<body>
+  <!---* nav.menu-box>ul>li*4>a[href=#]{1차 메뉴 아이템$} */-->
+  <nav class="menu-box">
+    <ul>
+      <li><a href="#">1차 메뉴 아이템1</a>
+      <!--2차메뉴-->
+      <ul class="sub">
+        <li><a href="#">2차 메뉴 아이템1</a></li>
+        <li><a href="#">2차 메뉴 아이템2</a></li>
+        <li><a href="#">2차 메뉴 아이템3</a></li>
+        <li><a href="#">2차 메뉴 아이템4</a></li>
+      </ul>
+        <li><a href="#">1차 메뉴 아이템2</a>
+        <!--2차메뉴-->
+        <ul class="sub">
+          <li><a href="#">2차 메뉴 아이템1</a></li>
+          <li><a href="#">2차 메뉴 아이템2</a></li>
+          <li><a href="#">2차 메뉴 아이템3</a></li>
+          <li><a href="#">2차 메뉴 아이템4</a></li>
+
+      </ul>
+        <li><a href="#">1차 메뉴 아이템3</a>
+          <!--2차메뉴-->
+          <ul class="sub">
+            <li><a href="#">2차 메뉴 아이템1</a></li>
+            <li><a href="#">2차 메뉴 아이템2</a></li>
+            <li><a href="#">2차 메뉴 아이템3</a></li>
+            <li><a href="#">2차 메뉴 아이템4</a></li>
+          </ul> 
+
+            <li><a href="#">1차 메뉴 아이템4</a>
+            <!--2차메뉴-->
+            <ul class="sub">
+              <li><a href="#">2차 메뉴 아이템1</a></li>
+              <li><a href="#">2차 메뉴 아이템2</a></li>
+              <li><a href="#">2차 메뉴 아이템3</a></li>
+              <li><a href="#">2차 메뉴 아이템4</a></li>
+            </ul>
+  </nav>
+</body>
+</html>

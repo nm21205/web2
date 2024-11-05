@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인폼만들기</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Noto Sans KR", sans-serif;
+      line-height: 1.4;
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .login {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .login > .container {
+      width: 580px;
+      background-color: #fff;
+      padding: 40px 0;
+      position: absolute;
+      /*calc = 계산기(+,-,*,/)*/
+      left: calc(50% - 290px);
+      /* margin-left:-290px; */
+      top: 100px;
+    }
+    .login h1 {
+      font-size: 36px;
+      color: #1aa5d0;
+      text-align: center;
+    }
+    .login > .container > p {
+      text-align: center;
+      margin: 20px 0 40px;
+      color: #666;
+    }
+    .login > .container > p > b {
+      font-size: 18px;
+    }
+
+    form {
+      border-top: 2px solid #1aa5d0;
+      border-bottom: 1px solid #d4e2e2;
+      padding: 0 20px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    table td {
+      height: 65px;
+    }
+    input[type="text"] input[type="password"] {
+      width: 220px;
+      height: 30px;
+      margin: 0 80px 0 30px;
+      border: 1px solid #999;
+      background-color: #f1f1f1;
+    }
+
+    input[type="submit"] {
+      width: 120px;
+      height: 90px;
+      font-size: 22px;
+      color: #fff;
+      background-color: #1aa5da;
+      border: 0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .join{font-size: 14px;
+    text-align: right;
+  line-height: 2;
+padding-right: 36px;}
+
+
+  </style>
+  <body>
+    <div class="login">
+      <div class="container">
+        <h1>로그인</h1>
+        <p>
+          <b>그린컴퓨터아카데미</b>에 오신것을 환영합니다.<br />
+          로그인 후 다양한 서비스를 이용하실 수 있습니다.
+        </p>
+        <form>
+          <table>
+            <tr>
+              <td><label for="user_id">회원아이디</label></td>
+              <td>
+                <input id="user_id" name="user_id" type="text" />
+              </td>
+              <td rowspan="2"><input type="submit" value="로그인" /></td>
+            </tr>
+            <tr>
+              <td><label for="user_pw">비밀번호</label></td>
+              <td><input id="user_pw" name="user_pw" type="password" /></td>
+            </tr>
+          </table>
+        </form>
+        <div class="join">
+          <a href="#">아이디/비밀번호 찾기</a>
+        </div>
+      </div>
+      <!--container-->
+    </div>
+    <!--login-->
+
+    <section class="content">
+      <h1>로그인 입력창을 만들어 보세요</h1>
+    </section>
+  </body>
+</html>

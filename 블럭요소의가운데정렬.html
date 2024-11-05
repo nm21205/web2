@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>블록요소의 가운데 정렬</title>
+    <style>
+      /*점선 표현*/
+      section {
+        border: 5px dotted gray;
+      }
+      section > div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin-right: 0; /*이코드는 사실 쓸피요없음 초기값이 0이라.*/
+      }
+      section > div:nth-of-child(2) {
+        background-color: gold;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      section > div:nth-of-type(3) {
+        background-color: green;
+        /*블록요소의 오른쪽 정렬*/
+        margin-right: auto;
+        margin-left:0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </body>
+</html>

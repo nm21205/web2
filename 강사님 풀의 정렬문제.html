@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      } /*in하릿으로 일단 a태그가 부모한테 상속받게함*/
+      nav {
+        background-color: orange;
+        min-width: 1200px;
+        overflow: hidden;
+        color:aliceblue;
+        font-size: 15px;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+
+      nav > .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .container > .logo {
+        float: left;
+        line-height: 40px;
+      }
+
+      .container > ul {
+        float: right;
+      }
+
+      .container > ul > li {
+        float: left;
+        margin-left: 60px;
+        line-height: 40px;
+      } 
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h1 class="logo"><a href="#">logo</a></h1>
+        <ul>
+          <li><a href="#">abot</a></li>
+          <li><a href="#">news</a></li>
+          <li><a href="#">ddd</a></li>
+          <li><a href="#">PORTPOILO</a></li>
+          <li><a href="#">PORTPOILO</a></li>
+          <li><a href="#">PORTPOILO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>

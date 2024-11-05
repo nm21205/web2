@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      section {
+        height: 500px;
+        background-color: lightyellow;
+        border: 1px solid red;
+      }
+      nav {
+        background-color: #fff;
+      }
+      .gnb {
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
+      .gnb > li > a {
+        display: block;
+        padding: 10px 0;
+      }
+      .gnb > li:hover > a {
+        background-color: tomato;
+        color: #fff;
+      }
+      .gnb > li {
+        width: 25%;
+        position: relative;/*d*/
+      }
+      .gnb > li > a {
+        display: block;
+        padding: 10px 0;
+      }
+      .sub {display: none;
+      position: absolute;
+      width: 100%;
+      outline: 1px solid blue;}
+      .sub > li > a {
+        display: block;
+        padding: 10px 0;
+     }
+
+      .sub > li:hover > a {background-color: turquoise;
+      color: #fff;}
+
+      /*메뉴에 마우스를 올리면 서브메뉴가 표시됩니다*/
+      .gnb > li:hover > .sub{display: block;}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="gnb">
+        <li>
+          <a href="#">메뉴</a>
+          <ul class="sub">
+            <li><a href="#">서브메뉴</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">메뉴</a>
+          <ul class="sub">
+            <li><a href="#">서브메뉴</a></li>
+            <li><a href="#">서브메뉴</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">메뉴</a>
+          <ul class="sub">
+            <li><a href="#">서브메뉴</a></li>
+            <li><a href="#">서브메뉴</a></li>
+            <li><a href="#">서브메뉴</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">메뉴</a>
+          <ul class="sub">
+            <li><a href="#">서브메뉴</a></li>
+            <li><a href="#">서브메뉴</a></li>
+            <li><a href="#">서브메뉴</a></li>
+            <li><a href="#">서브메뉴</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section></section>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<div></div>
+
+<h1>요구 : 프로그래스 바가 천천히 진행되록 해주세요.</h1>
+
+<style>
+body, ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a {
+    color:inherit;
+    text-decoration:inherit;
+}
+
+body {
+    height:1000px;
+}
+
+div {
+    width:0;
+    height:10px;
+    background-color:red;
+    /* transition : 변환옵션을 준다. */
+    /* width 1s => 너비를 변환하는데 duration(기간)을 1초 동안 천천히 진행하겠습니다. */
+    transition: width 1s;
+}
+
+body:hover > div {
+    width:100%;
+}
+</style>

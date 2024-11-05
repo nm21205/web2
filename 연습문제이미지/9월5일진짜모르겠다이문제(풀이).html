@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정렬연습5</title>
+    <!--폰트어썸-->
+    <script
+      src="https://kit.fontawesome.com/632d3e2496.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--노멀라이즈-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <style>
+      body{background-color:black;}
+      ul,
+      li {
+        list-style: none;
+      }
+      main {
+        width: 1200px;
+        padding: 10px;
+        display: flex;
+      }
+
+      .b1 {
+        width: 360px;
+        height: 480px;
+        background: url(/연습문제이미지/layout01.png);
+        color: #fff;
+      }
+
+      .b1 > hr {
+        width: 20px;
+        border: 1px solid #fff;
+        margin: 20px 0;
+      }
+
+      .box {
+        padding: 40px;
+        line-height: 1.6;
+      }
+
+      .box > h2 {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .box li {
+        font-size: 12px;
+      }
+
+      main > .wrap {
+        width: 820px;
+        display: flex;
+      flex-wrap:wrap;
+    }
+    main> .wrpa > .box {height: 240px;
+    }
+    .b2 {width: 560px;
+    background: url(/연습문제이미지/layout02.png);
+  color:#fff;}
+
+  .b2 > h2 P{margin-bottom: 20px;}
+
+  .b3, .b4 {width: 260px;
+  background-color: #fff;
+color:#333;}
+
+.b3>hr,
+.b4>hr{border: 1px solid #999;
+width: 20px;
+margin: 20px 0;
+}
+
+.b5 {width: 560px;
+background: url(/연습문제이미지/layout03.png);}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="box b1">
+        <h2>제품기획&middot;개발&middot;생산</h2>
+        <hr />
+        <ul>
+          <li>UV 소독</li>
+          <li>CLEAN</li>
+          <li>소형가전</li>
+          <li>BEAUTY</li>
+        </ul>
+      </div>
+      <div class="wrap">
+        <div class="box b2">
+          <h2>
+            국내를 넘어<br />
+            세계로 도약하는 기업
+          </h2>
+          <img src="/연습문제이미지/global_nobel.png" />
+        </div>
+        <div class="box b3">
+          <h2>Research &amp; Devlope</h2>
+          <hr />
+          <ul>
+            <li>센서 개발</li>
+            <li>UV LED 적용 기술</li>
+          </ul>
+        </div>
+        <div class="box b4">
+          <h2>ODM / OEM</h2>
+          <hr />
+          <ul>
+            <li>제품 기획</li>
+            <li>금형 설계</li>
+            <li>디자인/설계</li>
+            <li>시제품 제작</li>
+            <li>회로 설계</li>
+            <li>양산품 제작</li>
+          </ul>
+        </div>
+        <div class="box b5"></div>
+      </div>
+    </main>
+  </body>
+</html>

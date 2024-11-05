@@ -1,0 +1,50 @@
+*{margin:0; padding: 0%;}
+a{text-decoration: none;
+  color: inherit;}
+.container{width:1080px;
+margin:auto;
+border: 1px solid red;
+overflow: hidden;}
+
+.box {
+  width: 250px;
+height: 240px;
+outline: 1px solid blue;
+float: left;
+margin:10px;
+position: relative;/*유령의집화 -유령화된 자식요소들을 .box기준으로 정렬*/}
+
+div>img {width: 250px;
+height: 240px;}
+
+.overlay{position: absolute;
+left: 0;
+top: 0 ;
+bottom: 0;
+right:0;
+/*배경색을 어둡게 설정*/
+background-color: rgba(0,0,0,0.6);
+padding:40px 20px;
+box-sizing: border-box;
+/*위치속성으로 영역의 크기를설정하면 할필요도없음*/
+line-height: 1.5em;}
+.overlay>h2{font-size: 30px;}
+.overlay>.icon i{
+  font-size: 30px;
+  margin-right: 10px;
+}
+.overlay>p{
+  font-size: 14px;
+  margin:20px 0;
+}
+
+
+.overlay
+{opacity: 0;
+transform: scale(0);
+transition: all 0.5s;
+transform:translateY(5)}
+
+.box:hover > .overlay{opacity: 1;
+  transform: scale(1) rotate(0deg);
+  overflow: hidden;/*부모요소밖으로 콘텐츠가 넘어가면 가려줌*/}

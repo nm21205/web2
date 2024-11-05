@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display속성</title>
+    <style>
+      span{background-color:gold;}
+      /*컨테이너 1의 요소의 자식요소인 span요소*/
+.container1 > span{display:none;
+  display:inline;/*요소가 화면에서 사라짐*/
+  /*인라인요소는 whidth, hegight, padding, margin 속성 적용안됨*/
+width: 300px;
+height: 50px;
+margin: 10px;}
+
+/*container1의 후손(자손포함)인 #box1을 선택*
+밑에 container1 스페이스 하고 #box1도 되는데, 보통 < 이거 넣어야함*/
+.container1 #box1{display: inline-block;}
+/*width, height, margin, padding을 적용 할 수 있다*/
+.container1 #box2{display:block;
+width:auto;}
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <span>display:inline</span>
+      <span id="box1">display:inline-block</span>
+      <span id="box2">display:block</span>
+    </div>
+  </body>
+</html>

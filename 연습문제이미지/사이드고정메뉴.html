@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{   
+	margin:0;   
+	padding:0;   
+	list-style:none;   
+}
+a{ text-decoration:none; color:inherit; }
+header , section , footer{   
+	width:1000px;
+	height:900px;
+	margin:0 auto;
+}
+header{ background-color:yellow; }
+section{ background-color:lightgreen; }
+footer{ background-color:skyblue; }
+/*고정메뉴*/
+.fixed_menu{width: 80px;
+background-color: #fafafa;
+text-align: center;
+font-size: 14px;
+position: fixed;
+top: 100px;
+left: 50%;
+transform: translateX(500PX);
+/*콘텐츠 영역의 가운데를 중심으로 고정값으로 이동*/}
+
+.fixed_menu >.title{width: 100%;
+padding: 20px;
+box-sizing: border-box;
+background-color: tomato;
+color: #FFF;
+font-weight: bold;
+user-select: none; /*텍스트선택을 막아줌*/
+}
+
+.btn >li>a {display: block; width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  color:#333;
+
+
+}
+/*첫번째 li요소를 제외한 모든 li요소의 자식인 a요소를 선택*/
+.btn >li+li > a{border-top: 1px solid #999;}
+.top_btn{width: 100%;
+padding: 20px;
+box-sizing: border-box;
+background-color: tomato;
+color: #fff;
+font-weight: bold;
+cursor:pointer;/*커서모양 변경*/
+user-select: none; /*텍스트선택을 막아줌*/}
+  </style>
+</head>
+<body>
+  <div class="fixed_menu">
+    <!--이곳에 작성-->
+    <div class="title">Quick<br>MENU</div>
+    <ul class="btn">
+      <li><a href="">MENU</a></li>
+      <li><a href="">MENU</a></li>
+      <li><a href="">MENU</a></li>
+      <li><a href="">MENU</a></li>
+    </ul>
+    <div class="top_btn">TOP</div>
+  </div>
+  <header></header>
+  <section></section>
+  <footer></footer>
+</body>
+</html>

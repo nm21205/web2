@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html{/*부드러운 스크롤 이동*/
+    scroll-behavior: smooth;}
+    /*body요소의 여백 제거*/
+body{        
+margin:0;    
+}
+/*이곳에 스타일을 작성해 주세요*/
+/*============================*/
+/*각 영역의 높이를 지정*/
+section{
+  width:1000px;    
+height:800px;  
+color:#fff;
+margin: auto;  
+}
+/*각 영역을 구분하기위해 배경색을 따로 설정 한다.*/
+#home{ background-color:pink; }
+#about{ background-color:khaki; }
+#profile{ background-color:orange; }
+#portfolio{ background-color:skyblue; }
+#skill{ background-color:olive; }
+
+nav {min-width: 1000px;
+
+position:fixed;
+width: 100%;}
+
+nav > ul {overflow: auto;
+width: 1000px;
+list-style: none;
+margin:0;
+padding:0 ; 
+margin: 0 auto;
+overflow: auto; /*자식요소의 넢이를 인식시키기위해서 플롯 레프트를 지금 적용안되게 한거임.*/
+}
+
+nav >ul>li {
+
+  width: 200px;
+  line-height: 50px;
+  float:left;
+  text-align:center;
+  background-color: #dfdfdf;
+}
+
+nav >ul>li>a{background-color: gold;
+display: block;
+text-decoration: none;
+/*위에 라인하이트 들어가있어서 a태그가 블록 요소인데 그것때문에 메뉴에 높이까지도 적요오딤 위에 라인하이트있음. 그래서 색도 바뀜*/
+}
+nav >ul>li>a:hover{background-color: tomato;
+color: #fff;}
+/*호버는 a:hover로 시작해야함.*/
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <!--이곳에 내비게이션 작성-->
+  <!-----보통은 이런 목록태그로 만듬 --->
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#profile">profile</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#skill">skill</a></li>
+    </ul>
+    </nav>
+    <section id="home">home</section>
+    <section id="about">about</section>
+    <section id="profile">profile</section>
+    <section id="portfolio">portfolio</section>
+    <section id="skill">skill</section>
+</body>
+</html>

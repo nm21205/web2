@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+            .background-single {background-image: url(https://picsum.photos/id/1/800/600);
+        width:100%;
+        height:400px;
+        background-size:cover;
+        background-position: center;}
+        .background-color-image {background-image: url(https://picsum.photos/id/22/800/600);
+        width:100%;
+        height:400px;
+        background-color: rgba(255,0,0,0.3)
+        background-blend-mode: multiply;}
+
+        .background-multiple
+        {background-image: url(/연습문제이미지/Thanks.png),
+          url(/연습문제이미지/bokeh.jpg);
+        width:100%;
+        height:400px;
+        background-repeat:no-repeat;
+      background-position: center, left top;
+      background-size:200px, cover;}
+    </style>
+  </head>
+  <body>
+    <div class="background-single"></div>
+    <div class="background-color-image"></div>
+    <div class="background-multiple"></div>`
+  </body>
+</html>

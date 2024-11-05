@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정렬연습</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .container {
+        width: 1080px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-around;
+        outline: 1px solid red;
+        align-items: center;
+      }
+
+      .container > article {
+        width: 520px;
+      }
+
+      .gallery img {
+        display: block;
+      }
+
+      .thumbs {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      /*썸네일 이미지에 hover효과*/
+      .thumbs > li:hover {
+        cursor: pointer;
+        opacity: 0.6;
+      }
+
+      .txt > h1 {
+        font-size: 36px;
+        color: #333;
+        margin: 20px 0;
+      }
+
+      .txt > p.price {
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .selector > select {
+        width: 140px;
+        height: 40px;
+        background-color: #ccc;
+        border: 0;
+        color: #333;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+      .color {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 20px 0 40px;
+      }
+
+      .color > span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #333;
+        border-radius: 50%;
+        transform: translateY(2px);
+      }
+      .color > span:first-child {
+        margin-left: 20px;
+      }
+      .detail {
+        display: none;
+        border-top: 1px solid #666;
+      }
+
+      .d2 {
+        border-bottom: 1px solid #666;
+      }
+      .detail > h2 {
+        font-size: 14px;
+        line-height: 2;
+      }
+      .detail > p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .detail.on > p {
+        display:block;
+      }
+
+      .btn > {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn > button {
+       width: 250px;
+       height: 40px;
+        border-radius: 30px;
+        background-color: transparent;
+      border: 1px solid #666;
+    margin-right: 10px;
+  cursor: pointer;}
+    
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <article class="gallery">
+        <img src="/연습문제이미지/mainpage.png" alt="" />
+        <ul class="thumbs">
+          <li><img src="/연습문제이미지/f1.png" alt="" /></li>
+          <li><img src="/연습문제이미지/f2.png" alt="" /></li>
+          <li><img src="/연습문제이미지/f3.png" alt="" /></li>
+          <li><img src="/연습문제이미지/f4.png" alt="" /></li>
+          <li><img src="/연습문제이미지/f5.png" alt="" /></li>
+        </ul>
+      </article>
+      <article class="txt">
+        <h1>Division Title</h1>
+        <p class="price">10,000 &#92;</p>
+        <form>
+          <div class="selector">
+            <select>
+              <option value="size">SIZE</option>
+            </select>
+            <select>
+              <option value="QTY">QTY</option>
+            </select>
+          </div>
+
+          <div class="color">
+            COLORS
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="detail d1 on">
+            <h2>- DESCRIPTION</h2>
+            <p>
+              Lorem ipg elit. Quidem fugrepellat doloribus liquid unde sit
+              aspernatur possimus error modi eveniet m dolore. Iste?
+            </p>
+            <p>quid unde sit assimus error modi eveniet m dolore. Iste?</p>
+          </div>
+          <div class="detail d2">
+            <h2>+ DESCRIPTION</h2>
+            <p>
+              Lorem ipg elit. Quidem fugrepellat doloribus liquid unde sit
+              aspernatur possimus error modi eveniet m dolore. Iste?
+            </p>
+            <p>quid unde sit assimus error modi eveniet m dolore. Iste?</p>
+          </div>
+          <div class="btn">
+            <button type="button">BUTTON</button>
+            <button type="button">BUTTON</button>
+          </div>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

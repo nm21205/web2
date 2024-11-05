@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "bg_image",
+			"path": "C:/Users/Administrator/Desktop/bg_image"
+		},
+		{
+			"name": "css",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css"
+	}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-origin</title>
+    <style>
+      div {
+        width: 400px;
+        height: 260px;
+        padding: 20px;
+        border: 8px dashed red;
+        background-image: url(/dd/christmas.png);
+      }
+
+      #test1 {
+        /*배경이미지 위치가 콘텐츠 영역에서부터 시작하고 콘텐츠 영역까지 배경이 이미지가 표현 됩니다*/
+        background-origin: content-box;
+        background-clip: content-box;
+      }
+      #test2 {
+        /*배경이미지 위치가 콘텐츠 영역에서부터 시작하고 콘텐츠 영역까지 배경이 이미지가 표현 됩니다*/
+        background-origin: padding-box;
+        background-clip: padding-box;
+      }
+      #test3 {
+        /*배경이미지 위치가 콘텐츠 영역에서부터 시작하고 콘텐츠 영역까지 배경이 이미지가 표현 됩니다*/
+        background-origin: border-box;
+        background-clip: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test1">
+      <h3>background-origin:content-box</h3>
+    </div>
+    <div id="test2">
+      <h3>background-origin:padding-box</h3>
+    </div>
+    <div id="test3">
+      <h3>background-origin:border-box</h3>
+    </div>
+  </body>
+</html>

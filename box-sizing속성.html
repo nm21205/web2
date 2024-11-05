@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 300px;
+        border: 1px solid red;
+        background-color: #ababab;
+      }
+      .box1 {
+        width: 100%;
+        background-color: skyblue;
+        border: 10px solid black;
+        box-sizing:content-box;
+        /*요소의 넓이가 100%(요소가 차지할 수 있는 최대 넓이)에서 데두리 10px만큼 추가되어
+        부모 요소보다 커짐-> 결과적으로 레이아웃이 무너집니다*/
+      }
+      .box2 {
+        width: 100%;
+        /*어차피 블록이라 위드 100프로 줘봤자
+           이미 컨테이너 부모가 300값을 줘서 똑같이 300임 벗어날수가없음.*/
+        background-color: lightgreen;
+        border: 10px solid blue;
+        /*box-sizing속성을 borderbox로 설정하면 100%에 border가 포함되어 결과적으로 100프로 이상 늘어나지 않는다.*/
+        box-sizing:border-box;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+    </div>
+  </body>
+</html>

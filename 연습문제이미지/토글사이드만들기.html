@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .side-bar {
+        width: 300px;
+        height: 100%;
+        background-color: #afafaf;
+        position: absolute;
+        height: 100%;
+        left: -270px; /*뷰포트 왼쪽으로 270px만큼 이동*/
+        transition: left 0.3s, background-color 0.3s;
+      }
+      /*마우스를 사이드에 hover하면 사이드바가 뷰포트안쪽으로 이동*/
+      .side-bar:hover {
+        left: 0;
+        background-color: black;
+        color: white;
+      }
+      .status-icon > div {
+        padding: 6px;
+        text-align: right;
+        background-color: red;
+      }
+      .status-icon > div:last-child {
+        background-color: green;
+        display: none;
+        /*아래방향 화살표 아이콘은 가려놓는다.*/
+      }
+      /*마우스를 사이드에 hover하면 아래 화살표는 표시되고 오른쪽 화살표는 가려짐*/
+      .side-bar:hover > .status-icon > div:first-child {
+        display: none;
+      }
+      .side-bar:hover > .status-icon > div:last-child {
+        display: block;
+      }
+
+      /*nav*/
+      .menu-box {
+        margin-top: 100px;
+      }
+      .menu-box > ul > li > a {
+        display: block;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .menu-box > ul > li > a :hover {
+        color: black;
+        background-color: white;
+      }
+      ul > li > a:not(:only-child)::after {
+        content: "[+]";
+      }
+      /*형제가 없는 a요소는 제외하고"[+}"를 붙임*/
+      /*메뉴에 마우스를 올리면 [+]를 [-]로 변경*/
+      ul > li:hover > a:not(:only-child)::after {
+        content: "[-]";
+      }
+
+      /*1차 메뉴에 마우스를 올리면 2차메뉴가 나타남*/
+      .sub1 {
+        display: none;
+      }
+      .menu-box > ul > li:hover > .sub1 {
+        display: block;
+      }
+
+      .sub2 {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: black;
+      }
+      /*2차 메뉴에 마우스를 올리면 3차 메뉴가 나타남*/
+      .sub1 > li:hover > .sub {
+        display: block;
+      }
+      /*2차메뉴의 아이템요소(li)를 유령의 집화 해야 유령화된 3차메뉴를 정렬하기 쉽다*/
+      .sub > li {
+        position: relative;
+      }
+
+      .sub2 > li > a {
+        white-space: nowrap;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="status-icon">
+        <div>▶</div>
+        <div>▼</div>
+      </div>
+      <!--nav 생성-->
+      <nav class="menu-box">
+        <ul>
+          <li>
+            <a href="#">1차 메뉴 아이템</a>
+            <ul class="sub1">
+              <li>
+                <a href="#">2차 메뉴 아이템</a>
+                <ul class="sub2">
+                  <li><a href="#">3차 메뉴 아이</a></li>
+                  <li><a href="#">3차 메뉴 아이</a></li>
+                </ul>
+              </li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">1차 메뉴 아이템</a>
+            <ul class="sub1">
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+            </ul>
+          </li>
+          <li><a href="#">1차 메뉴 아이템</a></li>
+          <li>
+            <a href="#">1차 메뉴 아이템</a>
+            <ul class="sub1">
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

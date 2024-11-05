@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그림자속성</title>
+  <style>
+    div{/*text-shawdow속성 :글자에 그림자를 부여하는 속성*/
+    
+    border: 3px solid black;
+    /*x축이동값, y축이동값, 흐림도(얼마만큼 뿌옇게할지), 이사이에 확장값이 들어가있긴 함 지금은 생략되어있음 그리고 
+    마지막이 그림자 색상임, */
+  text-shadow: 5px 5px 5px black;
+
+/*bos-shadow속성 :태그(영역)에 그림자를 부여하는 속성*/
+box-shadow: 10px 10px 30px black, 10px 10px 40px red, 10px 10px 50px yellow;
+/*프레임 안쪽으로 그람자를 표현 가능*/
+box-shadow: inset 10px 10px 10px black;}
+  </style>
+</head>
+<body>
+  <div>
+    <h1>그림자속성</h1>
+  </div>
+</body>
+</html>

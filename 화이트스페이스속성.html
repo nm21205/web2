@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>white-space</title>
+    <style>
+      div {
+        width: 400px;
+        border: 10px solid red;
+        font-size: 2rem; /*rem의 r은 root를 뜻함(이거 최상위 요소니까 html값임)*/
+        /*줄바꿈 금지(기본값 =wrap:줄바꿈 허용)*/
+        white-space: nowrap;/*이거때문에 줄 안바뀌고 일자 됨 ㅇㅋ?*/
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed
+      ullam eaque fuga illo iusto animi eveniet, quam, iure quidem assumenda
+      magni voluptatum fugiat inventore totam vel consequuntur incidunt?
+      Suscipit.
+    </div>
+  </body>
+</html>

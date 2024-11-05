@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>검색창</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .bg {
+        width: 100%;
+        min-width:800px;/*줄여도 800이하로 줄어들지 않는다.*/
+        height: 280px;
+        background-image: url(/dd/searchBackground.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      form {
+        padding-top: 80px;
+        /*블록요소의 가운데 정렬*/
+        margin: 0 auto;
+        /*인라인요소의 가운데 정렬*/
+        text-align: center;
+        width: 800px;
+        height: 40px;
+        box-sizing: border-box;
+      }
+      form > h1 {
+        font-size: 28px;
+        color: #fff;
+        margin-bottom: 40px;
+      }
+      input[type="text"] {
+        width: 800px;
+        height: 40px;
+        border: 0;
+        outline: 0;
+        font-size: 16px;
+        background: #fff url(/dd/search_b.png) 10px 10px/20px 20px no-repeat;
+        /*배경색 이미지 , 포지션, 사이즈, 반복배경없음*/
+        text-indent: 40px;
+        /*40px 만큼 글자를 오른쪽을 이동시켜서 배경이미지와 겹쳐지지 않게 설정*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <form>
+        <h1>네트워크 통합검색</h1>
+        <input type="text" />
+      </form>
+    </div>
+  </body>
+</html>

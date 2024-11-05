@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프롬프트메소드</title>
+</head>
+<body>
+<h1>프롬프트메소드</h1>
+<button oneclick ="promptDialogBox()">prompt대화상자</button>
+<p id="text"></p>
+  <script>
+function PromptDialogBox(){
+  //window.prompt("간단한메시지"+ "입력란의 기본 케시")
+var inputStr = prompt ("당신의 이름을 입력해 주세요 :","홍길동")
+//input 변수 값이 null이 아니면 {}안의 코드가 실행
+if(inputStr != null){//#text요소의 안쪽에 이름을 추력
+  document.getElementById("text").innerHTML = "당신의 이름은" + inputStr + "입니다.";}
+}
+  </script>
+</body>
+</html>

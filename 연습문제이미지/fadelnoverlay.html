@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overlay</title>
+  <style>
+    .container{
+      width: 80%;
+      margin:0 auto;
+    position: relative;
+    }
+    .container> img {display: block;
+    width: 100%;
+  }
+  .overlay{/*유령화*/
+    /*포지션엡솔루트를 주고 부모요소의 100프로 크기로 설절할때
+  left: 0;
+top: 0;
+right: 0;
+bottom:0;*/
+/*포지션앱솔루트를 주고 가운데 정렬하는방법*/
+position:absolute;
+color: black;
+left:50%;
+top:50%;
+font-size:50px;
+transform:translate(-50%,-50%);
+/*화면에서 제거*/
+display:none;
+opacity: 0;
+transition: opacity 1;
+}
+i{font-size: 100px;}
+/*contaimer에 마우스를 올리면 .overlay사 나타남*/
+.container:hover > .overlay{display: block;
+opacity: 1;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/연습문제이미지/cat.jpg" alt="">
+    <div class="overlay">
+      <div class="text">hello dog!
+        <i class="fab fa-facebook-square">dddddddddddddddddddddddddd</i>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

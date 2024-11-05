@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initia
+l-scale=1.0">
+ <title>선언의 우선 순위</title>
+ <style>
+ div{color:orange;}
+
+#two{color:orange;}
+.two{color:gray;}
+.three{color:blue;}
+p{color:red;}
+#five{color:red;}
+#six{color:red;}
+.seven{color:blue;}
+#eight{color:gray;}
+.nine{color:skyblue;}
+#ten{color: orange!important;}
+ </style>
+
+선언의 우선 순위(연습 문제) 2
+ <link rel="stylesheet" type= "text/css" href="style2.css">
+</head>
+<body>
+ <div id="one" style="color:black;">요소1</div>
+
+<div id="two" class="two">요소2</div>
+<p id="three" class="three">요소3</p>
+<div id="four" class="four">요소4</div>
+<div id="five" class="five">요소5</div>
+<div id="six" class="six" style="color:gray;">요소6</div
+>
+<div id="seven" class="seven">요소7</div>
+<div id="eight" class="eight">요소8</div>
+<div id="nine" class="nine">요소9</div>
+<div id="ten" class="ten">요소10</div>
+</body>
+</html>

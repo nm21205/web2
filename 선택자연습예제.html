@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>선택자연습예제</title>
+<style>
+div{border:1px solid orange; margin:10px;}
+p{border:1px solid green; margin:10px;}
+ul{border:1px solid purple; margin:10px;}
+li{border:1px solid skyblue; margin:10px;}
+/*========여기서부터 본인이 작성==========*/
+/*(태그선택자)p태그의 배경색상을 lightyellow로 설정하시오.*/
+p{background-color: lightyellow;}
+
+/*(아이디선택자)아이디wrap의 배경색을 pink로 설정하시오.*/
+#wrap{background-color:pink;}
+
+/*(클래스선택자)클래스p1의 서체색상을 red로 설정하시오.*/
+.p1{color:red;}
+
+/*(자식선택자)아이디header의 자식인 p요소의 서체색상을 blue로 설정하시오*/
+#header > p{color:blue;}
+
+/*(후손선택자)클래스container의 후손인 클래스l1의 서체색상을 white로 설정하시오 */
+.container.l1{color:white;}
+
+/*(형제선택자)클래스l1의 다음형제인 클래스l2의 서체색상을 green로 설정하시오.*/
+.l1+l2{color:green;}
+
+/*(형제선택자)클래스p1의 형제중에서 ul요소의 배경색상을 skyblue로 설정하시오.*/
+.p1~ul{background-color: skyblue;}
+
+/*(자식계층선택자)클래스item요소중 첫번째 요소의 서체색상을 olive로 설정하시오.*/
+.item:first-child{color:olive;}
+
+/*(자식계층선택자)클래스item요소중 두번째 요소의 서체색상을 red로 설정하시오.*/
+.item:nth-child(2){color:red;}
+
+/*(자식계층선택자)클래스item요소중 마지막 요소의 서체색상을 gray로 설정하시오.*/
+.item:last-child{color:gray;}
+
+/*(상태선택자)클래스part의 자식인 li요소에 마우스를 올리면 배경색상이 pink로 변경되게 설정하시오.*/
+.part>li:hover{color:pink;}
+
+/*(상태선택자)클래스part의 자식인 li요소를 마우스로 클릭하고 있으면 배경색상이 red로 변경되게 설정하시오.*/
+.part>li:active{background-color:red;}
+
+/*(상태선택자)아이디footer에 마우스를 올리면 그 후손인 li의 배경색상이 yellow로 변경되게 설정하시오.*/
+#footer:hover li:{background-color:yellow;}
+
+/*(속성선택자)li요소중 title속성이 spot인 요소의 서체 색상을 purple로 설정하시오.*/
+li[title="spot"]{color:purple;}
+
+
+</style>
+</head>
+
+<body>
+	<div id="wrap" class="container"><!-- 시작 태그 -->
+        <div id="header" class="part"><!-- 시작 태그 -->
+        	<p>파트</p>
+        </div><!-- div#header.part 객체의 종료 태그 -->
+        <p class="part  p1">파트2</p>
+        <p class="part  p2">파트2</p>
+        <ul class="part">
+        	<li class="list l1">목록1</li>
+            <li class="list l2">목록2</li>
+            <li class="list l3">목록3</li>
+        </ul><!-- ul.part객체의 종료 태그 -->
+        <div id="footer">
+        	<ul class="wrap">
+            	<li class="item">아이템</li>
+                <li class="item">아이템</li>
+                <li class="item" title="spot">아이템</li>
+                <li class="item">아이템</li>
+            </ul>
+        </div>
+	</div><!-- div#wrap.container 객체의 종료 태그 -->
+
+</body>
+</html>

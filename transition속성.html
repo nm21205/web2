@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition속성</title>
+  <style>
+    div {
+    height: 100px;
+  background-color: #afafaf;
+opacity: 0.3;
+/*요소의 배경색이 변경됬을때 0.5초 동안 서서히 벼경*/
+transition:background-color .5s, width .5s;
+width: 100%;}
+/*div요소에 마우스를 올렸을 때 적용되는 스타일*/
+div:hover{
+/*배경색을 2초에 걸쳐 변경*/
+background-color: gold;
+transition: background-color 2s;
+/*width에 트랜지션을 주었지만 효과가 적용되지 않는 이유 
+  =div가 auto이기 때문이다, 
+width값을 명확히게 지정해야 한다.*/
+width: 50%;
+transition:background-color:2s, width 2s; opacity: 1;
+}
+/*all = 모든 속성에 transition 적용*/
+  </style>
+</head>
+<body>
+ <div>
+ </div>
+ <hr>
+ <div></div>
+</body>
+</html>

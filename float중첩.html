@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>중첩된 float</title>
+    <style>
+      .big-area {
+        width: 100px;
+        margin-right: 10px;
+        padding: 10px;
+        background-color: #999;
+        float: left;
+      }
+      .small-unit {
+        width: 48px;
+        height: 48px;
+        background-color: #333;
+        color: #fff;
+        margin:1px;
+        float: left;
+      }
+
+      /*위에 플롯 속성을 두개다 적용했는데 부모다 높이가 없는데도 자식이 플롯이고 부모도 플롯이라 자식요소의 높이를 인식해서 모양이 나옴 중요*/
+    </style>
+  </head>
+  <body>
+    <!--.big-area*2>.small-unit*4-->
+    <div class="big-area">
+      <div class="small-unit">A</div>
+      <div class="small-unit">B</div>
+      <div class="small-unit">C</div>
+      <div class="small-unit">D</div>
+    </div>
+    <div class="big-area">
+      <div class="small-unit">1</div>
+      <div class="small-unit">2</div>
+      <div class="small-unit">3</div>
+      <div class="small-unit">4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--css내부정의-->
+    <style>
+      h1 {
+        color: red;
+      }
+      /*전체 선택자 밑에부분 * 이것 . */
+      * {
+        background-color: beige;
+      }
+
+      #msh {
+        background-color: #ccc;
+      } /*이게 id 선택자*, #ccc이거 무슨 헥스 코드임*/
+      /*클래스 선택자: 클래스명으로 선택*/
+      .web {
+        color: purple;
+      }
+    </style>
+    <!--css외주정의-->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--알트시픝 방향키로 복사함 ㅋ-->
+    <!--인라인정의---->
+    <h1 id="msh" style="color: gold">제목태그1-1</h1>
+    <h1 id="wsh" class="web">제목태그1-2</h1>
+    <h1>제목태그1-3</h1>
+    <h1 class="web">제목태그1-4</h1>
+    <h1>제목태그2</h1>
+    <h1 class="web">제목태그3</h1>
+    <h1>제목태그4</h1>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+/*style.css*/
+div{color:green;}
+.five{color:black;}
+#six{color:pink!important;}
+#seven{color:green;}
+#eight{color:pink;}
+.nine{color:olive;}
+선언의 우선 순위(연습 문제) 3
+#ten{color: lightgreen!important;}

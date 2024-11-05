@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트랜스폼속성</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        border: 1px soil black;
+        margin-bottom: 50px;
+      }
+      /*위치속성:trasnlaste*/
+      /*x축으로 100이동*/
+      .box1 {transform:translateX(100px);
+        /*y축으로 100dlehd*/
+      tratransform:translateY(100px);
+      /*x.y축으로 이동*/
+      tratransform:translate(100px, 1000px);}
+      /*크기속성*/
+
+      /*x축으로 1.5배 확대*/
+      .box2 {transform: scaleX(1.5);
+      /*y축으로 1.5배 확대*/
+        transform: scaleY(1.5);
+        /*x,y축 같이 확대할때*/
+        transform: scale(1.5);}
+        /*회전속성*/
+        .box3 {
+          /*x축으로45*/
+          transform:rotateX(45deg);
+        /*y축으로45*/
+          transform:rotateY(45deg);
+          /*z축으로45*/
+          transform:rotateZ(45deg);
+          /*45도 회전*/
+          ransform:rotate(45deg);}
+
+          /*기울기속성*/
+          .box4 
+          
+          {transform:skewX(20deg);
+          
+          transform: skewY(20deg);}
+          .box5 {transform:translate(50px); rotate:(30deg);
+          scale(1.1);}
+
+            </style>
+  </head>
+  <body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+  </body>
+</html>

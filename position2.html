@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        width: 500px;
+        border: 10px solid red;
+      }
+      nav > img,
+      section > img {
+        display: block; /*img 요소의 하단여백을 제거하기 위해 설정*/
+      }
+      section {
+        display: block; /*img 요소의 하단여백을 제거하기 위해 설정*/
+        width: 500px;
+        border: 5px solid rebeccapurple;
+        position: relative;
+        /*유령의집화*/
+      }
+
+      section > div {
+        font-size: 2rm;
+        background-color: gold;
+        position: absolute;
+        /*유령화가 되면 유령의 집안에서 위치를 이동 할 수 있다*/
+        bottom: 0;
+        right: 0;
+        display: none;
+      }
+      section:hover > div {
+        display: block;
+      }
+      /*화면분할*/
+      .s2 {
+        border: 10px solid red;
+        width: 500px;
+        position: relative;
+      }
+      article > div {
+        font-size: 2rem;
+        background-color: gold;
+        position: absolute;
+      }
+      article>div:nth-of-type(1){bottom:50%;
+        height: 100px;
+      top:0;
+    left: 0;
+  right: 50%;}
+  article>div:nth-of-type(2){bottom:50%;
+        height: 100px;
+      top:0;
+    left: 50%;
+  right: 0;}
+          </style>
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://github.com/jmk255/source/blob/main/color1.png?raw=true"
+        alt=""
+      />
+    </nav>
+
+    <article class="s2">
+      <img
+        src="https://github.com/jmk255/source/blob/main/color.png?raw=true"
+        alt=""
+      />
+      <div>티셔츠</div>
+      <div>티셔츠</div>
+    </article>
+  </body>
+</html>

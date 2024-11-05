@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+      ul, li {list-style: none;}
+      .container {
+        width: 1180px;
+        height: 480px;
+        outline: 1px solid red;
+        display: flex;
+      }
+
+      .product {
+        height: px;
+        width: 360px;
+        outline: 1px solid blue;
+        display: flex;
+        background-image: url(/연습문제이미지/layout01.png);
+      }
+
+      .glodal {
+        height: 240px;
+        width: 560px;
+        outline: 1px solid blue;
+        background-image: url(/연습문제이미지/layout02.png);
+      }
+      .glodal> p {margin-left: 40px;
+      margin-top:20px;
+    color: white;
+  font-size: 16px;}
+
+      .glodal a{position:relative;
+      top: 10%;
+    left: 8%;}
+
+      .research {
+        width: 260px;
+        height: 240px;
+        outline: 1px solid rgb(76, 0, 255);
+        
+      }
+
+      .image {
+        height: 240px;
+        width: 560px;
+        outline: 1px solid blue;
+        background-image: url(/연습문제이미지/layout03.png)
+      }
+
+      .odm {
+        height: 240px;
+        width: 260px;
+        outline: 1px solid blue;
+      }
+
+      .container2 {
+        width:820px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product">
+        <p>제품기획 개발생산</p>
+        <ul>
+          <li>uv소득</li>
+          <li>clean</li>
+          <li>소형가전</li>
+          <li>beauty</li>
+        </ul>
+      </div>
+
+      <div class="container2">
+        <div class="glodal">
+          <p>국내를 넘어</p>
+          <p>세계로 도약하는 기업</p>
+          <a href=""><img src="/연습문제이미지/global_nobel.png" alt="" srcset=""></a>
+        </div>
+        <div class="research"></div>
+        <div class="odm"></div>
+        <div class="image"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i18next</title>
+  <!-- i18next cdn -->
+  <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js" ></script>
+</head>
+<body>
+  
+  <select id="language_select" onchange="i18next.changeLanguage(this.value)">
+    <option value="en">Engilsh</option>
+    <option value="kr">korean</option>
+    </select>
+
+    <!--웹페이지 텍스트(제목, 내용) -->
+    <h1 id="title"></h1>
+    <p id="content"></p>
+    <script>
+      //현재의 웹 브라우저에 설정된 언어 확인(만약 한국어라면 true, 아니라면 fasle)
+      const isKorean = navigator.language === "ko-KR" || "ko";
+
+      //웹 브라우저 언어가 한국어이면 한국어 아니몀 영어 선택
+
+      if(isKorean){
+        document.getElementById("language_select").options[1].setAttribute("selected", true);
+      }else{
+        document.getElementById("language_select").options[0].setAttribute("selected", true);
+      }
+      
+      //웹 페이지 텍스트 변환을 위한 세팅
+
+      i18next.init(
+        {
+          lng: isKorean ? "ko" : "en", //한국어인지 영어인지 표기
+          debug : true,
+          resources : {
+            //웹 페이지를 구성하는 텍스트들을 json형태로 입력
+            ko :{
+              translation:{
+               title:"한국어 제목",
+               content:"한국어 내용"
+              }
+            },
+            en:{
+              translation :{
+                  title : "English title",
+              constent :"English content"
+              }
+            }
+            }
+          },
+        function(err, t){
+       if(err){
+        console.error(err); //에러가 발생되면 콘솔에 에러메시지를 출력
+       }else{
+        //에러가 없을 경우 설정한 언어로 json안에 텍스트들을 대입
+        updateContent();
+       }
+        }
+      )
+
+      function updateContent(){
+        document.getElementById("title").innerHTML = i18next.t("title")
+        document.getElementById("content").innerHTML = i18next.t("content")
+      }
+    
+      //언어 변환시 위의 select에서 onchange이벤트가 발생하면 i18next의 langugeChanged 이벤트가 발생됨
+      i18next.on("languageChanged", () => {
+        updateContent();
+      })
+    </script>
+</body>
+</html>

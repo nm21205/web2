@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최소 &amp; 최대 크기 속성</title>
+  <style>
+    body {
+  font-family:arial;
+  margin:0;
+  padding:0;
+  /*배경을 반투명하게 설정*/
+ background-color: rgba(0,0,0,0.5);
+ text-align: center;
+/*인라인 요소를 가운데 정렬*/}
+.container { 
+  max-width:1000px;
+/*컨테이너의 최대 넓이를 1000px로 설정*/
+  margin:0 auto;/*블록요소의 가운데 정렬*/
+/*외곽선*/
+  background-color:red;
+}
+
+.box { 
+  background-color:lightcoral;
+  color: white;
+  line-height:100px;
+/*테두리를 둥굴게 주겠다는 뜻임(반지름으로 주는거)*/
+  border-radius: 8px;
+  margin :10px; 
+}
+.box1{min-width: 200px;/*최소넓이*/
+max-width:400px;/*최대넓이*/
+width:80%;/*뷰포트 넓이의 80%크기로 width설정*/
+height:100px;
+}
+.box2{
+  width:80px ;
+  height:50vh:/*뷰포트의 50프로크기의 높이*/
+min-height:100px; /*min-height 100px이상으로 늘어나지않음*/
+max-height:200px; /*max-height 200px이상으로 늘어나지않음*/}
+
+.box3{width: 80%;
+height: 100vh;
+min-width: 150px;
+max-width: 300;
+min-height: 150px;
+max-height: 300px;}
+
+  </style>
+</head>
+<body>
+ <!--* div.container>div.box.box$*3 이거 젠코딩임*-->
+ <div class="container">
+  <div class="box box1">min width / max width</div>
+  <div class="box box2">min height / max height</div>
+  <div class="box box3">min and max / widht height</div>
+ </div>
+ </div> 
+</body>
+</html>

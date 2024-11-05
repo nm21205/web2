@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인폼</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0 auto;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #666;
+        font-size: 16px;
+      }
+      .login {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        /*모달창만들기*/
+      }
+      .login > .container {
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        top: 100px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+      }
+      .close{height: 40px;
+        border-bottom: 1px solid #999;
+        text-align: right;
+      position: relative;}
+      .close > a{font-size: 20px;
+      position: absolute;
+    right: 10px;
+  top: 8px;}
+  form {padding: 40px;
+  
+  position: absolute;
+left: 27%;
+top: 20%}
+  input[type=text]{width: 220px; height: 30px;
+  margin-bottom:20px;
+background-color: #f1f1f1;;
+border:1px solid #999;}
+
+label{line-height: 1.6;}
+
+button{width: 220px;
+height: 40px;
+background-color: #111;
+color:#fff;
+font-size: 16px;
+border: 0;}
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <div class="container">
+        <div class="close">
+          <a href="#">x</a>
+        </div>
+      </div>
+    </div>
+    <form>
+      <p>
+        <label>사용자명 또는 이메일 주소</label><br />
+        <input type="text" />
+      </p>
+      <p>
+        <label for="pw">암호</label><br />
+        <input type="text" id="pw" name="pw" />
+      </p>
+      <button type="submit">로그인</button>
+    </form>
+
+    <section class="content">
+      <h1>로그인 입력창을 만들어 보세요</h1>
+    </section>
+  </body>
+</html>

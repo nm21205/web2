@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.start {
+  height:903px;
+
+}
+.re {
+  width: 100%;
+  height: 100%;
+  
+}
+body {
+  background-color: #000;
+  width: 1920px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  font-size: 30px;
+  z-index: 999;
+  transition: top 0.3s;
+}
+
+body{
+  width: 100%;
+}
+.menu > .bn1,
+.bn2,
+.bn3,
+.bn4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.menu > .bn1,
+.bn4 {
+  margin: 40px;
+}
+
+
+
+.menu-icon {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-icon > span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.menu-icon.active span:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.menu-icon.active span:nth-child(2) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -15px;
+}
+
+.hide {
+  z-index: -20;
+  position: relative;
+  top: 150px;
+  background-color: black;
+  color: white;
+  display: flex;
+  gap: 116.7px;
+  border-top: 1px solid white;
+  font-size: 25px;
+  height: 100%;
+  
+}
+
+
+.hide > ul {
+margin-top: 20px;
+z-index: -20;
+
+}
+
+
+.hide > ul >li {
+padding:20px;
+}
+  
+
+
+
+
+.hide ul:nth-child(1) {
+  margin-left: 360px;
+}
+
+.hide.active {
+  z-index: 1;
+  transition: 0s;
+}
+
+.canvas {
+  position: relative;
+}
+
+.canvas > .videos {
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  position: absolute;
+  top:-165px
+}
+
+.word {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  font-size: 50px;
+  color: white;
+  -webkit-text-stroke: 3.5px black;
+  animation: fadeInout 5s infinite;
+}
+
+@keyframes fadeInout {
+  0% {
+    opacity: 0;
+    transform:translateX(-100px);
+  }
+
+  50% {
+    opacity: 1;
+    transform:translateX(0px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.second_page {
+  position:static;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 900px;
+}
+
+.second_page > .titles {
+margin-left: 40px;
+margin-top: 70px;
+margin-bottom: 70px;
+height: 100%;
+}
+
+.second_page > .titles > h1{
+  opacity: 0.7;
+  font-size: 50px;
+  letter-spacing: -1px;
+  }
+
+
+  .slideshow {
+    width: 100%;
+    height: 300px;
+    margin: 150px auto 0;
+    position: relative;
+  }
+  /*버튼*/
+  .left-btn,
+  .right-btn {
+    font-size: 50px;
+    line-height: 50px;
+    color: #fff;
+    position: absolute;
+    top: calc(80% - 25px);
+    padding: 0;
+  }
+  .right-btn {
+    right: 200px;
+  }
+  .left-btn
+{
+  left: 200px;
+}
+
+  /*콘텐츠*/
+  .content {
+    width: 900px;
+    height: 180px;
+    perspective: 950px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 450px);
+  }
+
+  .content-carrousel {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+  }
+  .content-carrousel > figure {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #4d444d;
+    box-shadow: 0 0 20px #000;
+    position: absolute;
+    left: calc(50% - 75px);
+  }
+  .content-carrousel > figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(400px);
+  }
+  .content-carrousel > figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(400px);
+  }
+  .content-carrousel > figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(400px);
+  }
+  .content-carrousel > figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(400px);
+  }
+  .content-carrousel > figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(400px);
+  }
+  .content-carrousel > figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(400px);
+  }
+  .content-carrousel > figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(400px);
+  }
+  .content-carrousel > figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(400px);
+  }
+  .content-carrousel > figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(400px);
+  }
+
+  .content-carrousel img {
+    transition: 0.3s ease;
+    width: 100%;
+    height: 100%;
+  }
+  .content-carrousel img:hover {
+    scale: 1.1;
+  }
+
+  .third_page {height: 100%;
+background-color: #000;
+color: white;
+position: relative;
+z-index: 9;
+width: 100%;
+height: 400px;
+  }
+
+  .third_page > .num_log {
+    width: 100%;
+    height:150px;
+    margin-left: 35px;
+  }
+
+  .third_page > section {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+  }
+
+  
+  .third_page > section  > .numbers > .num {
+    display: flex;
+  }
+
+
+
+  .third_page > section  > .numbers {
+    border-left: 1p solid white;
+    border-right: 1px solid white;
+    height: 180px;
+  }
+
+  .third_page > section > .numbers > .mum  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 600px;
+}
+
+
+.third_page > section > .numbers > .mum > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 80px;
+  
+}
+
+
+.third_page > section > .numbers > .mum > div:nth-child(2) {
+ text-align: start;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+
+.third_page > section > .numbers > .mum2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.third_page > section > .numbers > .mum3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.third_page > section > .numbers > .mum > div >i {
+   margin-top: 10px;
+   font-size: 130px;
+   margin-right:50px ;
+ }
+ 
+
+.four_page {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 300px;
+  position: relative;
+  margin-left: -40px;
+
+}
+
+.four_page > div:nth-child(1) {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.four_page > div:nth-child(2) {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 250px;
+  margin-left: 100px;
+}
+
+.four_page > .canvas1 {
+  width: 1800px;
+  height: 200px;
+  margin-left: 90px;
+  margin-right: 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  top: 500px;
+  opacity: 0;
+
+
+}
+
+.four_page > div > h2 {
+  margin-left: 40px;
+}
+
+
+
+
+.four_page > .canvas2 {
+  width: 1800px;
+    height: 200px;
+    margin-left: 90px;
+  margin-right: 40px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top:100px;
+  z-index: 200;
+  top:780px;
+  box-shadow: 0px -10px 30px rgb(66, 66, 66);
+  opacity: 0;
+
+
+}
+
+.four_page > .canvas3 {
+  width: 1800px;
+    height: 200px;
+  margin-left: 90px;
+  margin-right: 40px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  z-index: 400;
+  top: 1070px;
+ box-shadow: 0px -10px 30px rgb(66, 66, 66);
+ opacity: 0;
+
+}
+
+
+.four_page > .canvas {
+  height: 300px;
+}
+
+
+.four_page > .canvas > div:nth-child(1) {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: black;
+  font-size: 25px;
+}
+
+
+ 
+.four_page > .canvas >.Corporation {
+display: flex;
+width: 100%;
+margin-top: 70px;
+justify-content: space-around;
+align-items: center;
+}
+
+
+
+.five_page{
+  background-color: white;
+  width: 1920px;
+  height: 700px;
+  position: relative;
+  top: 700px;
+  z-index: 40;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
+
+}
+
+.five_page > div {
+  display: flex;
+  justify-content: center;
+}
+
+
+.five_page > div > .part {
+  position: absolute;
+  top: 500px;
+  width: 700px;
+  color: white;
+  background-color:black;
+  border-radius: 20px;
+  font-size: 30px;
+  height: 100px;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items:center;
+  display: flex;
+}
+
+
+
+
+  /*미디어 쿼리부분*/
+
+
+.six_page {
+  position: relative;
+  height: 400px;
+  width: 1920px;
+  z-index: 910;  
+  top: 900px
+}
+
+.six {
+  display: flex;
+  color:white;
+
+
+}
+.si_one{
+  margin-left: 70px;
+}
+
+
+
+.si_one > h1 {
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+.si_one > img {
+  width: 960px;
+  height: 900px;;
+
+}
+
+.si_one > p {
+  font-size: 20px;
+}
+ 
+.si_two{
+  margin-right: 270px;
+}
+
+.si_two > img {
+  width: 790px;
+  height: 900px;;
+}
+
+
+.seven_page {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 900;
+  top: 1800px;
+  height: 500px;
+  color: white;
+}
+
+
+.seven_page {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 900;
+  top: 1800px;
+  height: 500px;
+  color: white;
+  outline: 1px solid red;
+  width: 1920px;
+}
+
+
+.se_one {
+  width: 900px;
+  outline: 1px solid red;
+}
+
+.se_two {
+  width: 900px;
+  outline: 1px solid red;
+}

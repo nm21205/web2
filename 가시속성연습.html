@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>블록_인라인연습</title>
+<style>
+    button{
+        background-color:pink;
+        color:white;
+        font-size:30px;
+        border:none;
+        /*이곳에 코드 작성*/
+        width:200px;
+        height:100px;
+
+        /*================*/
+    }
+    /*display가 인라인 블록이라서 높이 너비는 줄수 있으나, 온전한 블록요소가 아니라서
+    같은 라인에 들어갈수있다. 인라인과 인라인블록이 같이 한줄에있음.*/
+    a{
+        text-decoration: none;
+        background-color:coral;
+        color:white;
+        font-size:30px;
+        /*이곳에 코드 작성*/
+        width:200px;
+        height:100px;
+        /*a요소는 인라인태그라서 width와 heigth 값을 가질 수 없다.*/
+      /*이위에 까지의 코드상 인라인태그인데, 밑에 코드로 인라인 블록으로 바꿀수있다.*/
+       display:inline-block; /*인라인 블록으로 바꿔서 두깨랑 너비를 줌 a로 시작하는게 결국 인라인블록임.*/
+        /*================*/
+    }
+    section{
+	font-size: 5rem;
+}
+a + div {/*이거 잘못생각함 이거 a의 다음형제인div칸을 선택한 거임 ..*/
+  display:none;
+}
+/*섹션에 자식요소인 a에 마우스를 올리면 그다음 자식요소인 div에 display를 블록으로 설정한다*/
+a:hover + div {
+  display:block;
+}
+</style>
+</head>
+
+<body>
+    <button>button</button>
+    <a href="#">button</a>
+    <section>
+      <a href="#">버튼</a>
+      <div>안녕</div>
+      <div>잘가</div>
+    </section>
+</body>
+</html>

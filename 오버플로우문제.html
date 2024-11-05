@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #000;
+        overflow: scroll;
+      }
+      .scroll-box {
+        width: 300px;
+        height: 100px;
+        overflow: hidden;
+        border: 1px solid #000;
+        /* 콘텐츠가 넘칠 경우 스크롤바 표시 */
+      }
+      .box {
+        width: 200px;
+        height: 100px;
+        border: 1px solid #000;
+      }
+      /*넘치는 부분을 숨김*/
+      .child {
+        width: 300px;
+        height: 150px;
+        background-color: lightblue;
+        margin: 5px;
+        overflow-y: scroll;
+      } 
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis
+      voluptatum doloremque dolorem commodi cupiditate placeat sit consequatur!
+      Voluptatem quo cum inventore eos totam dolores numquam, aliquid eum at
+      minima! Ratione deleniti odio id nesciunt ducimus? Incidunt, sed. Impedit
+      asperiores magni ex minima corrupti accusantium, explicabo, dolores
+      pariatur, neque tempora a debitis soluta maxime corporis quasi praesentium
+      nesciunt eaque quidem! Fuga cumque illum unde ea voluptatibus eos odit
+      saepe nisi dolor obcaecati. Sequi deserunt voluptatum nisi culpa quas
+      nesciunt repellat molestias, excepturi amet necessitatibus? Doloribus
+      perferendis labore similique necessitatibus consequatur?
+    </div>
+    <div class="scroll-box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iure
+      fugiat hic mollitia ipsam nihil, animi, voluptate dolores ducimus enim
+      minus eos ad aperiam laboriosam magnam autem, veniam earum voluptas.
+      Obcaecati vel eum, reprehenderit sunt libero architecto incidunt officia
+      ullam corporis sed et dolorem praesentium distinctio quas repellendus
+      laudantium! Iste quia inventore distinctio quis culpa in id repellat atque
+      ab. Temporibus architecto assumenda repellat debitis. Cum, itaque modi?
+      Optio nobis repellendus sit fuga possimus dolorem ipsum atque maiores
+      dolorum ipsam, voluptatem velit numquam, recusandae nihil tenetur eos quis
+      in rem.
+    </div>
+    <div class="box">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+    </div>
+    <div class="container">
+      <div class="box"></div>
+      </div>
+  </body>
+</html>

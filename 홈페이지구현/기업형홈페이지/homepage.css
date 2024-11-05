@@ -1,0 +1,701 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+
+.menu_pic {
+  background-image: url("./img/int4.png");
+  background-repeat: no-repeat;
+  background-image: cover;
+  background-position:center;
+  width: 100%;
+  height: 1100px;
+  opacity: 110%;
+}
+.title_menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between
+}
+.title_menu > .logo {
+  margin-left: 100px;
+}
+.title_menu > .logo > div > i {
+  font-size: 60px;
+
+}
+
+
+.title_menu > .mode > ul {
+  display: flex;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.title_menu > .mode > ul > li {
+  margin: 30px;
+}
+
+.title_menu > .toggleline {
+  font-size: 60px;
+  margin-right: 100px;
+}
+
+.t_intro {
+  margin-top: 260px;
+  justify-content: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.t_intro > section > h1 {
+  font-size: 90px;
+  font-weight: bold;
+  margin-right: 400px;
+  color: blueviolet;
+}
+
+
+.t_intro > section > p {
+  font-size: 25px;
+  margin-right: 400px;
+  font-weight : 100px;
+  color: white;
+}
+.intro > div {
+ justify-content: center;
+ display: flex;
+ 
+}
+
+
+.intro > .int {
+  display: flex;
+}
+.intro > .int > .inin {
+  margin-top: 80px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.inin > :nth-child(1) {
+  color:blueviolet;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.intro > .int > section  > button {
+  display: inline-block;
+  margin-top : 110px;
+  margin-left : 50px;
+  font-size: 25px;
+  width: 175px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+}
+.intro > .int > section  > button:hover{
+  border: 3px solid blueviolet;
+
+}
+
+.tro {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30PX;
+  font-weight: bold;
+}
+.tro > .in > li {
+  margin-bottom: 70px;
+}
+.tro > .in2 > li > img{
+   height: 284px;
+}
+
+.tro > .in2 > li {
+  margin-bottom: 70px;
+}
+
+
+.tro > div > .line {
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid black;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.intro2 {
+  background: url(./img/scientist-examining-sample-stockcake\ 1.png);
+  background-repeat: no-repeat;
+  
+  text-align: center;
+
+  height: 2600px;
+  width: 100%;
+margin-top: 400px;
+background-position: center;
+}
+
+.intro2 > :nth-child(1){
+  margin-top: 500px;
+  display: flex;
+  justify-content: center;
+}
+.intro2 >div > .head {
+  margin-top: 800px;
+  text-align: start;
+}
+
+
+.intro2 >div > .head > h1 {
+  color: blueviolet; 
+  list-style: none;
+}
+
+ .intro2 >div > .head > p {
+  font-size: 32px;
+  color: aliceblue;
+  margin : 20px 0px;
+  font-weight: bold;
+}
+
+.intro2 >div > .head > button 
+{ text-align: start;
+  padding: 5px;
+  margin-top : 5px;
+  font-size: 25px;
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.intro2 >div > .head > button:hover {
+
+  border: 3px solid blueviolet;
+
+}
+
+
+
+
+.intro2 >div > .cards {
+  margin-top: 300px;
+}
+
+.intro2 >div > .cards2 {
+  margin-top: 500px;
+}
+
+.intro2 >div > .cards > .card {
+  justify-content: flex-start;
+  text-align: start;
+  margin: 200px 30px;
+}
+
+
+.intro2 >div > .cards > .card {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  width: 310px;
+  height: 500px;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: start;
+}
+
+
+.intro2 >div > .cards > .card > li {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.intro2 >div > .cards > .card > :nth-child(1)
+{
+  display: flex;
+ margin: 20px;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.intro2 >div > .cards > .card > :nth-child(2)
+{
+ font-size: 15px;
+}
+
+.intro2 >div > .cards > .card > :nth-child(5) > button
+{ background-color: transparent;
+  font-size: 20px;
+  border:none;
+  cursor: pointer;
+}
+
+
+.intro2 >div > .cards2 > .card {
+  justify-content: flex-start;
+  text-align: start;
+  margin: 200px 30px;
+}
+
+
+.intro2 >div > .cards2 > .card {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  width: 310px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  text-align: start;
+}
+
+
+.intro2 >div > .cards2 > .card > li {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.intro2 >div > .cards2 > .card > :nth-child(1)
+{
+  display: flex;
+ margin: 20px;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.intro2 >div > .cards2 > .card > :nth-child(2)
+{
+ font-size: 15px;
+}
+
+.intro2 >div > .cards2 > .card > :nth-child(5) > button
+{ background-color: transparent;
+  font-size: 20px;
+  border:none; }
+
+  
+
+
+
+
+.intro2 >div > .cards2 > .card:hover {
+  background-color: rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+  transition: background-color 0.4s; /* transition을 background-color에만 적용 */
+}
+
+.intro2 >div > .cards > .card:hover {
+  background-color: rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+  transition: background-color 0.4s; /* transition을 background-color에만 적용 */
+}
+
+
+
+
+.container > .main >  .product{
+  margin-top: 60px;
+  text-align: start;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.container > .main >  .product > div > p
+{ font-size: 30px;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+
+
+.container > .main >  .product > button
+{ background-color: transparent;
+  font-size: 20px;
+  border:1px solid black;
+  margin-top: 80px;
+  margin-left: 50px;
+  height: 40px;
+  text-align: center;
+  width: 90px;
+  cursor: pointer;
+}
+
+
+.container > .main >  .product > button:hover {
+  border:3px, solid rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+} 
+
+
+.p_lntro2 {
+  font-size: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 120px;
+  height: 520px;
+  width: 100%;
+  background: url(./img/lake-6701636_1920\ 1\ \(1\).png);
+  background-image: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1128px;
+  backdrop-filter: blur(15px);
+  position: relative;
+ 
+}
+
+.p_lntro2 > .overlay {
+position: absolute;
+left:0;
+top :0;
+width: 376px;
+height: 520px;
+pointer-events: none;
+background-color: rgba(94, 3, 112, 0.5);
+transition:all 0.5s;
+z-index: 1;
+opacity:0;
+}
+
+
+
+.p_lntro2 > ul {
+  width: 376px;
+  text-align: center;
+  align-content: center;
+  border: 1px dotted white;
+  box-sizing: border-box;
+  font-size: 25px;
+  margin: 0;
+  color: aliceblue;
+  z-index: 1;
+  opacity: 1;
+}
+
+
+.p_lntro2 > ul:hover {
+opacity: 1;
+}
+
+.p_lntro2 > ul > li:hover {
+  font-size: 2rem;
+  transition: 0.4s ease;
+  opacity: 1;
+  
+  }
+
+
+
+
+
+ 
+  /* background-color: rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+  /* transition: background-color .5s; transition을 background-color에만 적용
+  font-size: 35px;
+  transition: font-size .5s; */ 
+  
+
+.p_lntro2 > ul > li > p {
+  
+line-height: 40px;
+}
+
+.site {
+  background: url(./img/people-2561336_1280\ 1.png);
+  background-repeat: no-repeat;
+  background-image: cover;
+  background-position: center;
+  height: 700px;
+  margin-top: 200px;
+}
+
+.site > .product {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+} 
+
+
+.site > .product > div > p {
+  font-size: 30px;
+  color: blueviolet;
+  font-weight: bold;
+
+} 
+
+.site > .product > div > h1 {
+  font-size: 30px;
+  color: white;
+
+} 
+
+
+.site > .product > button {
+  background-color: transparent;
+  font-size: 20px;
+  border:1px solid white;
+  margin-top : 75px;
+  margin-left: 100px;
+  height: 40px;
+  text-align: center;
+  width: 90px;
+  cursor: pointer;
+  color:white;}
+  
+
+.site > .product > button:hover {
+  border:3px, solid rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+} 
+
+
+.site > div > .talent {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  margin-top: 10px;
+  text-align: center;
+  gap: 50px;
+  position: relative;
+}
+
+
+
+
+
+.site > div > .talent > .box{
+  margin-top: 50px;
+  width: 220px;
+  height: 378px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  align-content: center;
+  backdrop-filter: blur(30px);
+
+}
+
+.site > div > .talent > .box > .fon{
+color: blueviolet;
+font-size: 20px;
+}
+
+.site > div > .talent > .box > .fon2{
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  }
+
+.site > div > .talent > .box > p{
+  margin-top: 25px;
+  color: white;
+  }
+  
+  .news {
+    display: flex;
+    justify-content: start;
+  }
+
+  .news > .newsint {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+  } 
+  
+  
+  .news > .newsint > div > p {
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: bold;
+  
+  } 
+  
+  .news > .newsint > div > h1 {
+    font-size: 50px;
+    color: black;
+  
+  } 
+
+  .news > .newsint > button {
+    background-color: transparent;
+    font-size: 20px;
+    border:1px solid black;
+    margin-top: 35px;
+    margin-left: 600px;
+    height: 40px;
+    text-align: center;
+    width: 90px;
+    cursor: pointer;}
+
+
+
+    .news > .newsint > button:hover {
+      border:3px, solid rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+    } 
+
+
+.listmain {justify-content: center;
+
+display: flex;
+width: 100%;
+height: 350px;
+margin-top: 100px;
+}
+
+.listmain > .newslist {
+  display: flex;
+  width: 100%;
+  gap: 100px;
+  justify-content: center;
+}
+
+.listmain > .newslist > :nth-child(2) {
+  height: 100%;
+}
+
+
+.listmain > .newslist > :nth-child(2) > h1 {
+  font-size : 30px;
+}
+
+.listmain > .newslist > :nth-child(2) > h2 {
+  font-size: 30px;
+  display: block;
+  margin-top: 60px;
+}
+
+.listmain > .newslist > :nth-child(3) {
+  font-size: 20px;
+  font-weight: bold;
+  line-height:50px;
+}
+
+.listmain2 {justify-content: center;
+  border-top: 1px solid black;
+  padding-top: 50px;
+  display: flex;
+  width: 100%;
+  height: 350px;
+  margin-top: 10px;
+  }
+
+
+.listmain2 > .newslist2 {
+  display: flex;
+  width: 100%;
+  gap:180px;
+  justify-content: center;
+}
+
+.listmain2 > .newslist2 > :nth-child(2) {
+  height: 100%;
+  gap: 40px;
+}
+
+
+.listmain2 > .newslist2 > :nth-child(2) > h1 {
+  font-size : 30px;
+}
+
+.listmain2 > .newslist2 > :nth-child(2) > h2 {
+  font-size: 30px;
+  display: block;
+  margin-top: 60px;
+}
+
+.listmain2 > .newslist2 > :nth-child(3) {
+  font-size: 20px;
+  font-weight: bold;
+  line-height:50px;
+
+}
+footer {
+  width: 100%;
+  background-color: rgb(4, 4, 49);
+  margin-top: 50px;
+  height: 400px;
+}
+
+.footer_menu {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  color: white;
+}
+
+.footer_menu > .logo  > div > i{
+  margin-left: 40px;
+  margin-top: 55px;
+  font-size: 80px;
+}
+
+.footer_menu > .mode > ul {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 80px;
+  margin-right: 50px;
+
+}
+
+
+.footer_menu > .mode > ul > li {
+  margin: 0px 50px;
+}
+
+footer > .last {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  border-top:1px solid white;
+  align-items: center;
+ 
+}
+
+footer > .last > ul
+{
+ margin-top: 10px;  
+ color: white;
+ margin-left: 40px;
+}
+
+footer > .last > .person > li
+{ display:inline-block;
+  gap:50px;
+  margin-top: 30px;
+  margin-bottom:50px;
+  color: white;
+  margin-right: 100px;
+}
+
+footer > .last > .person > .smail:nth-child(1)
+{ font-size: 1px;
+}
+
+@keyframes scale {
+  50% { scale: 1.2; }
+}

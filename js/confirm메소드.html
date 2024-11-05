@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>confirm메소드</title>
+</head>
+<body>
+  <h1>confirm() 메소드</h1>
+  <button onclick="confirmDialogBox()">confirm 대화 상자</butto
+  n>  <!--버튼을 클릭하면confirmDialogBox함수를 호출한다. -->
+
+  <p id="text"></p>
+  <script>
+  function confirmDialogBox(){
+    //str라는 변수를 선언
+    var str;
+
+    //컴펌창에 확인을 누르면 {} 안의 코드가 실행되고 취소를 누르면 else뒤의 {}안의 코드가 실행됩니다.
+      if (confirm("확인이나 취소를 눌러주세요!") == true) {
+        str = "당신은 확인을 눌렀습니다!";
+      } else {
+        str = "당신은 취소을 눌렀습니다!";
+      }
+      //#text에 str변수값을 할당
+      document.getElementById("text").innerHTML = str;}
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;}
+    .navbar{background-color: #333;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;/*대충 고딕체임*/}
+   
+
+</style>
+</head>
+<body>
+  <nav class="navbar claerfix">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <div class="header">
+          <h2>Mega_Menu</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>sub 1</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+          </div>
+          <div class="column">
+            <h3>sub 2</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+          </div>
+          <div class="column">
+            <h3>sub 3</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <!--row-->
+      </div>
+      <!--dropdown-content-->
+    </div>
+    <!--dropdown-->
+  </nav>
+  <div style="padding: 16px">
+    <h3>내비게이션 바에서 전체 넓이 서브메뉴 드롭 다운</h3>
+    <p>"드롭 다운" 링크 위로 마우스를 이동하면 서브메뉴가 표시됩니다.</p>
+  </div>
+</body>
+</html>

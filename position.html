@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*이건 div라는 태그중에 parent를 선택한거임 div의 자식들중에 선택한거 아니 지금은div중 parent를 선택*/
+      div.parent {
+        width: 100%;
+        background-color: #ccc;
+      }
+      div.parent > div.child {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        position: static;
+        /*블럭요소가 기본적으로 가지고 있는 포지션 값(초가화)*/
+      }
+      /*선택자가 기수록 우선순위를 가짐*/
+      div.parent > div.ch1 {
+        background-color: #fc0;
+        position: relative;
+        /*포지션 릴레이티브는 위치속성을 적용햐서 상대적으로 위치를 이동할 수 있다*/
+        
+        /*좌표속성:left:좌측 기준, top상단 기준, right: 우측기준 bottom: 하단 기준*/
+        left: 100px;
+        top: 100px;
+        z-index: 3;
+        /*도형의 위 아래(z축) 순서 변경시 사용*/
+      }
+      div.parent > div.ch2 {
+        background-color: #f70;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+      }
+
+      div.parent > div.ch3 {
+        background-color: #f00;
+        background-color: red;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <!--div.parent>.child{box#}*3?-->
+    <h1>position</h1>
+    <div class="parent">
+      <div class="child ch1">box#</div>
+      <div class="child ch2">box#</div>
+      <div class="child ch3">box#</div>
+    </div>
+  </body>
+</html>

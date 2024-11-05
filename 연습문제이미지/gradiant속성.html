@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그라이언트속성</title>
+    <style>
+      /*linear-gradient(각도, 색상 위치, 색상 위치, 색상 위치, 색상 위치......)
+    */
+
+      .gradient1 {
+        font-family: "Times New Roman", Times, serif;
+        line-height: 60px;
+        text-align: center;
+        background: #f60;
+
+        background: linear-gradient(
+          0deg,
+          #f85032 0%,
+          #f16f5c 50%,
+          #f6290c 51%,
+          #e73827 100%
+        );
+      }
+      .gradient2 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        background:repeating-linear-gradient
+        (45deg, red, orange 50px);
+      }
+    </style>
+  </head>
+  <body>
+    <!----.gradient>h1{css3 Gradient}-->
+    <div class="gradient1">
+      <h1>css3 Gradient</h1>
+    </div>
+    <div class="gradient2"></div>
+   
+  </body>
+</html>
