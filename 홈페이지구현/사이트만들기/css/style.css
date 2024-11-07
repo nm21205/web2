@@ -559,11 +559,12 @@ align-items: center;
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 900;
+  z-index: -1;
   top: 1800px;
   height: 500px;
   color: white;
   width: 1920px;
+ 
 }
 
 
@@ -647,9 +648,136 @@ top: 10px;
  body >.eight_page {
   
   position: relative;
-  z-index: 1900;
-  top: 2800px;
-  height: 500px;
-  color: white;
+  z-index: 5000;
+  top: 1780px;
+  height: 1500px;
+  color: black;
   width: 1920px;
+  background-color: white;
+  justify-content: space-between;
+  text-align: start;
+  vertical-align: baseline;
+
 }
+
+body >.eight_page > .ei_ti {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  position: absolute;
+  top:40px;
+  width: 1870px;
+}
+
+.ei_ti > div >h1 {
+  font-size: 80px;
+}
+
+.ei_ti > div:nth-child(2) > a > p {
+  color:grey;
+  font-size: 20px;
+  margin-top: 50px;
+  
+  
+}
+
+.pics {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 1870px;
+  height: 400px;
+  top: 250px;
+}
+
+.pics > li {
+  width: 400px;
+  margin: 50px;
+  padding: 40px;
+  border-right:1px solid black ;
+  border-left:1px solid black ;
+  height: 400px;
+}
+
+.pics > li:nth-child(3) {
+  margin-top: 47px;
+}
+.pics > li:nth-child(3) > h1 {
+  margin-top: -14px;
+}
+
+.pics > li:nth-child(3) > img {
+  margin-top: -14px;
+}
+
+.pics > li > h1 {
+  font-size: 20px;
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.pics > li > p {
+  font-size: 15px;
+}
+
+.pics > li > div {
+  display: flex;
+}
+
+
+.pics > li > div > button {
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #000;
+  background-color: transparent;
+  border-radius: 20px;
+  border:1px solid black;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.pics > li > div > button:hover {
+  background-color: skyblue;
+  transition: .4s;
+}
+
+
+
+
+body >.eight_page > .main_logo {
+  font-size: 100px;
+  text-align: center;
+  position: absolute;
+  top: 1000px;
+  right: 500px;
+  color: gray;
+}
+
+footer {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  z-index: 50000;
+  top:1700px;
+  background-color: #fff;
+ 
+}
+
+footer > .f-line {
+  display: flex;
+  color: #000;
+  margin: 30px;
+  justify-content: space-between;
+}
+
+footer > .f-line > i {
+ font-size: 40px;
+}
+
+footer > .f-line > a {
+  text-decoration:underline;
+ }
