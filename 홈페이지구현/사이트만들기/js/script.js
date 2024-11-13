@@ -3,6 +3,25 @@ addEventListener("DOMContentLoaded", function() {
   const hide = document.querySelector('.hide');
   const start = document.querySelector('.start');
 
+  const bn2Items = document.querySelectorAll('.bn2 > li');
+
+  bn2Items.forEach(item => {
+    item.addEventListener('mouseover', function() {
+      this.classList.toggle('active');
+      hide.classList.toggle('active');
+    });
+  });
+
+  bn2Items.forEach(item => {
+    item.addEventListener('mouseleave', function() {
+      this.classList.remove('active');
+      hide.classList.remove('active');
+    });
+  });
+
+
+
+
   menuIcon.addEventListener('click', function() {
     console.log("1");
     this.classList.toggle('active');
@@ -130,7 +149,7 @@ gsap.to(".canvas1", {
     start: "bottom bottom", 
     end: "top top",
     scrub: 1,
-    markers: true,
+ 
     once: true
   },
   y: -10,
@@ -144,7 +163,7 @@ gsap.to(".canvas2", {
     start: "bottom bottom", 
     end: "top top",
     scrub: 1,
-    markers: true,
+
     once: true
   },
   y: -10,
@@ -158,7 +177,7 @@ gsap.to(".canvas3", {
     start: "bottom bottom", 
     end: "top top",
     scrub: 1,
-    markers: true,
+
     once: true
   },
   y: -10,
