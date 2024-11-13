@@ -127,6 +127,8 @@ padding:20px;
 .hide.active {
   z-index: 1;
   transition: 0s;
+  
+
 }
 
 .canvas {
