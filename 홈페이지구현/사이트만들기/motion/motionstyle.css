@@ -134,11 +134,18 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   position: relative;
   width: 100%;
   padding: 50px 0;
+  margin-top: 150px;
 }
 
 .year .title {
+  position: relative;  /* absolute에서 변경 */
   text-align: center;
   margin-bottom: 40px;
+}
+
+.year .title > h1 {
+  margin-bottom: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .year .Ye {
@@ -147,10 +154,45 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 200px;  /* title과의 간격 조정 */
+  
 }
 
+
+
+
+
 .year .Ye section {
-  flex: 1;
-  min-width: 300px;
-  padding: 20px;
+  outline: 1px solid black;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 15px;
+
 }
+
+.year .Ye section:nth-child(1){
+  line-height: 75px;
+
+}
+
+
+
+.star {
+  display: flex;
+  flex-direction: column;  /* 세로 방향 배치 */
+  align-items: center;     /* 가로축 중앙 정렬 */
+  gap: 50px;              /* 각 섹션 사이 간격 */
+  margin: 100px 0;         /* 위아래 여백 */
+}
+
+/* 각 섹션의 기본 스타일 */
+.star > div {
+  width: 80%;            /* 또는 원하는 너비 */
+  text-align: center;    /* 내부 콘텐츠 중앙 정렬 */
+}
+
+.Goods, .Event, .Game {
+  margin-bottom: 30px;
+line-height: 100px;}
