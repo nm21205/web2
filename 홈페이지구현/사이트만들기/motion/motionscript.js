@@ -36,3 +36,6 @@ addEventListener("DOMContentLoaded", function() {
     this.classList.remove('active');
   });
 });
+
+let lastScrollTop = 0;
+const menu = document.querySelector

@@ -13,9 +13,17 @@ ul, li {
 
 body {
   width: 100%;
-  height: 100%;
+  height: 10000px;
 }
 
+
+body{
+  background-image: url(../images/backimage.png);
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  align-content: center;
+}
 .menu {
   position: fixed;
   top: 0;
@@ -29,6 +37,7 @@ body {
   font-size: 30px;
   z-index: 999;
   transition: top 0.3s;
+  border-radius: 10px;
 }
 
 .menu > .bn1,
@@ -120,13 +129,34 @@ body {
   text-align: center;
   position: absolute;
   margin-top:200px;
-  z-index: -10;
+  height: 100%;
+  width-max:1200px;
+ 
 }
+
+
+  .title > .first_bg {
+    height: 100%;
+    background-image: url(../images/firstshot.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute; /* 수정된 부분 */
+    z-index: 1; /* 수정된 부분 */
+    width: 100%; /* 추가된 부분 */
+  }
+
+  .tl{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+  }
 
 
 .title > h1{
 margin-bottom: 50px;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+bottom :1000px;
 }
 
 
@@ -134,13 +164,14 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   position: relative;
   width: 100%;
   padding: 50px 0;
-  margin-top: 150px;
+  margin-top: 280px;
+  height: 1000px;
 }
 
 .year .title {
   position: relative;  /* absolute에서 변경 */
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .year .title > h1 {
@@ -152,10 +183,18 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-top: 200px;  /* title과의 간격 조정 */
+  gap: 10px;
+
   
+}
+
+.year .Ye p{
+
+
+padding: -20;  
 }
 
 
@@ -172,11 +211,105 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 
 }
 
-.year .Ye section:nth-child(1){
-  line-height: 75px;
+.year .Ye {
+  line-height: 45px;
+  font-weight: bold;
 
 }
 
+.year1 {
+  position: relative; /* 가상 요소를 위해 position 설정 */
+  width: 100%;
+  height: 100%;
+  background-color: rgb(248, 248, 248, 0.5);
+  color: black; /* 텍스트 색상 */
+  overflow: hidden; /* 가상 요소가 부모 요소를 넘지 않도록 설정 */
+}
+
+.year1::before {
+  content: ""; /* 가상 요소의 내용 설정 */
+  background-image: url(../images/year1.jpg); /* 배경 이미지 설정 */
+  background-size: cover; /* 배경 이미지 크기 조정 */
+  position: absolute; /* 절대 위치 설정 */
+  top: 0; /* 상단에 위치 */
+  left: 0; /* 왼쪽에 위치 */
+  right: 0; /* 오른쪽에 위치 */
+  bottom: 0; /* 하단에 위치 */
+  filter: blur(2px); /* 흐림 효과 설정 */
+  z-index: -1; /* 다른 콘텐츠 뒤에 위치하도록 설정 */
+}
+
+.year2 {
+  position: relative; /* 가상 요소를 위해 position 설정 */
+  width: 100%;
+  height: 100%;
+  background-color: rgb(248, 248, 248, 0.5);
+  color: black; /* 텍스트 색상 */
+  overflow: hidden; /* 가상 요소가 부모 요소를 넘지 않도록 설정 */
+}
+
+.year2::before {
+  content: ""; /* 가상 요소의 내용 설정 */
+  background-image: url(../images/year2.jpg); /* 배경 이미지 설정 */
+  background-size: cover; /* 배경 이미지 크기 조정 */
+  position: absolute; /* 절대 위치 설정 */
+  top: 0; /* 상단에 위치 */
+  left: 0; /* 왼쪽에 위치 */
+  right: 0; /* 오른쪽에 위치 */
+  bottom: 0; /* 하단에 위치 */
+  filter: blur(2px); /* 흐림 효과 설정 */
+  z-index: -1; /* 다른 콘텐츠 뒤에 위치하도록 설정 */
+}
+
+
+
+  .year3 {
+    position: relative; /* 가상 요소를 위해 position 설정 */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248, 248, 248, 0.5);
+    color: black; /* 텍스트 색상 */
+    overflow: hidden; /* 가상 요소가 부모 요소를 넘지 않도록 설정 */
+  }
+  
+  .year3::before {
+    content: ""; /* 가상 요소의 내용 설정 */
+    background-image: url(../images/year3.jpg); /* 배경 이미지 설정 */
+    background-size: cover; /* 배경 이미지 크기 조정 */
+    position: absolute; /* 절대 위치 설정 */
+    top: 0; /* 상단에 위치 */
+    left: 0; /* 왼쪽에 위치 */
+    right: 0; /* 오른쪽에 위치 */
+    bottom: 0; /* 하단에 위치 */
+    filter: blur(2px); /* 흐림 효과 설정 */
+    z-index: -1; /* 다른 콘텐츠 뒤에 위치하도록 설정 */
+  }
+
+
+
+
+
+  .year4 {
+    position: relative; /* 가상 요소를 위해 position 설정 */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248, 248, 248, 0.5);
+    color: black; /* 텍스트 색상 */
+    overflow: hidden; /* 가상 요소가 부모 요소를 넘지 않도록 설정 */
+  }
+  
+  .year4::before {
+    content: ""; /* 가상 요소의 내용 설정 */
+    background-image: url(../images/year4.jpg); /* 배경 이미지 설정 */
+    background-size: cover; /* 배경 이미지 크기 조정 */
+    position: absolute; /* 절대 위치 설정 */
+    top: 0; /* 상단에 위치 */
+    left: 0; /* 왼쪽에 위치 */
+    right: 0; /* 오른쪽에 위치 */
+    bottom: 0; /* 하단에 위치 */
+    filter: blur(2px); /* 흐림 효과 설정 */
+    z-index: -1; /* 다른 콘텐츠 뒤에 위치하도록 설정 */
+  }
 
 
 .star {
@@ -184,7 +317,7 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   flex-direction: column;  /* 세로 방향 배치 */
   align-items: center;     /* 가로축 중앙 정렬 */
   gap: 50px;              /* 각 섹션 사이 간격 */
-  margin: 100px 0;         /* 위아래 여백 */
+  margin-top: 1000px;         /* 위아래 여백 */
 }
 
 /* 각 섹션의 기본 스타일 */
@@ -219,3 +352,5 @@ footer {
   justify-content: space-between; /* 내부 요소 간격 조정 */
   width: 100%;                /* 전체 너비 사용 */
 }
+
+
