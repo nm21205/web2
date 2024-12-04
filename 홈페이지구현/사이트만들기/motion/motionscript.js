@@ -4,6 +4,9 @@ addEventListener("DOMContentLoaded", function() {
   const start = document.querySelector('.start');
   const bn2Items = document.querySelectorAll('.bn2 > li');
 
+
+
+
   // 하나의 forEach로 통합
   bn2Items.forEach(item => {
     item.addEventListener('mouseenter', function() {  // mouseover 대신 mouseenter 사용
@@ -19,8 +22,6 @@ addEventListener("DOMContentLoaded", function() {
       }, 100);
     });
   });
-
-
 
   menuIcon.addEventListener('click', function() {
     console.log("1");
@@ -38,4 +39,15 @@ addEventListener("DOMContentLoaded", function() {
 });
 
 let lastScrollTop = 0;
-const menu = document.querySelector
+
+// 문제 발생 부분: 메뉴에 대한 querySelector가 비어 있음
+const menu = document.querySelector('.menu'); // 정확한 선택자를 입력하세요!
+
+const canvas1 = document.querySelector('.title > .first_bg');
+
+if (!canvas1) {
+  console.error("Element '.title > .first_bg' not found.");
+} else {
+  console.log("Element found:", canvas1);
+}
+
