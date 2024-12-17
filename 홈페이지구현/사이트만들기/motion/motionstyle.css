@@ -1,19 +1,25 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  box-sizing: border-box; /
 }
 
-a {
-  text-decoration: none;
-}
-
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+} 
+
+
 body {
+  background-color: #000;
   width: 100%;
-  height: 10000px;
+  overflow-x: hidden; /* 가로 스크롤 숨김 */
+
 }
 
 
@@ -24,6 +30,7 @@ body{
   background-size: cover;
   align-content: center;
   max-height: 5000px;
+  text-align: center;
 }
 .menu {
   position: fixed;
@@ -124,249 +131,81 @@ body{
 }
 
 
-.title {
-  position: relative;
-  margin-top: 200px;
-  height: 800px; /* 적절한 높이 설정 */
+.year{
   width: 100%;
-}
-
-.title > .first_bg {
-  position: relative; /* 가상 요소 기준 */
-  height: 100%; /* 부모 높이 기준 */
-  width: 100%; /* 부모 너비 기준 */
-  background-image: url(../images/firstshot.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 700px;
+  background: url(../images/up.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.title > .first_bg::after {
-  content: "";
-  position: absolute; /* 부모 기준 */
-  top: 0; /* 상단 맞춤 */
-  left: 0; /* 왼쪽 맞춤 */
-  width: 100%; /* 부모와 동일한 너비 */
-  height: 100%; /* 부모와 동일한 높이 */
-  background-color: rgba(248, 248, 248, var(--after-opacity, 0.5)); /* 기본값 0.5 */
-  z-index: 100; /* 필요 시 조정 */
-}
-
-
-  .tl{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    z-index: 10;
-  }
-
-
-.title > h1{
-margin-bottom: 50px;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-bottom :1000px;
-border-radius: 10px;
-border: 1px solid transparent;
-width: 900px;
-background-color:rgb(223, 223, 223, 0.3);
-
-}
-
-
-
-
-
-.year {
-  position: relative;
-  width: 100%;
-  padding: 50px 0;
-  margin-top: 280px;
-  height: 1000px;
-}
-
-.year .title {
-  position: relative;  /* absolute에서 변경 */
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.year .title > h1 {
-  margin-bottom: 50px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.year .Ye {
+.title .title-text{
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding-top: 200px;  /* title과의 간격 조정 */
-  gap: 10px;
-
-  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  text-align: center;
+  align-content: center;
+ 
 }
 
-.year .Ye p{
-
-
-padding: -20;  
+.title .title-text > h1{
+  font-size: 50px;
+  color: black;
+  margin-top: 50px;
+  border: 1px solid transparent;
+  background-color: rgb(223, 223, 223, 0.3);
+  width: 600px;
+  border-radius: 10px;
 }
 
-
-
-
-
-.year .Ye section {
-  outline: 1px solid black;
+.title .title-text > p{
+  font-size: 20px;
+  color: black;
+  margin-top: 70px;
+  border: 1px solid transparent;
+  background-color: rgb(223, 223, 223, 0.3);
   width: 300px;
-  height: 300px;
-  text-align: center;
-  line-height: 100px;
-  font-size: 15px;
-
+  border-radius: 10px;
 }
 
-.year .Ye {
-  line-height: 45px;
-  font-weight: bold;
-
-}
-
-.year1 {
-  position: relative; /* 가상 요소를 위해 position 설정 */
+.title .first_bg{
   width: 100%;
-  height: 100%;
-  background-color: rgb(248, 248, 248, 0.5);
-  color: black; /* 텍스트 색상 */
-  overflow: hidden; /* 가상 요소가 부모 요소를 넘지 않도록 설정 */
-}
-
-.year1::before {
-  content: ""; /* 가상 요소의 내용 설정 */
-  background-image: url(../images/year1.jpg); /* 배경 이미지 설정 */
-  background-size: cover; /* 배경 이미지 크기 조정 */
-  position: absolute; /* 절대 위치 설정 */
-  top: 0; /* 상단에 위치 */
-  left: 0; /* 왼쪽에 위치 */
-  right: 0; /* 오른쪽에 위치 */
-  bottom: 0; /* 하단에 위치 */
-  filter: blur(2px); /* 흐림 효과 설정 */
-  z-index: -1; /* 다른 콘텐츠 뒤에 위치하도록 설정 */
-}
-
-.year2 {
-  position: relative; /* 가상 요소를 위해 position 설정 */
-  width: 100%;
-  height: 100%;
-  background-color: rgb(248, 248, 248, 0.5);
-  color: black; /* 텍스트 색상 */
-  overflow: hidden; /* 가상 요소가 부모 요소를 넘지 않도록 설정 */
-}
-
-.year2::before {
-  content: ""; /* 가상 요소의 내용 설정 */
-  background-image: url(../images/year2.jpg); /* 배경 이미지 설정 */
-  background-size: cover; /* 배경 이미지 크기 조정 */
-  position: absolute; /* 절대 위치 설정 */
-  top: 0; /* 상단에 위치 */
-  left: 0; /* 왼쪽에 위치 */
-  right: 0; /* 오른쪽에 위치 */
-  bottom: 0; /* 하단에 위치 */
-  filter: blur(2px); /* 흐림 효과 설정 */
-  z-index: -1; /* 다른 콘텐츠 뒤에 위치하도록 설정 */
+  height: 1000px;
+  background: url(../images/firstshot.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
 
-  .year3 {
-    position: relative; /* 가상 요소를 위해 position 설정 */
-    width: 100%;
-    height: 100%;
-    background-color: rgb(248, 248, 248, 0.5);
-    color: black; /* 텍스트 색상 */
-    overflow: hidden; /* 가상 요소가 부모 요소를 넘지 않도록 설정 */
-  }
-  
-  .year3::before {
-    content: ""; /* 가상 요소의 내용 설정 */
-    background-image: url(../images/year3.jpg); /* 배경 이미지 설정 */
-    background-size: cover; /* 배경 이미지 크기 조정 */
-    position: absolute; /* 절대 위치 설정 */
-    top: 0; /* 상단에 위치 */
-    left: 0; /* 왼쪽에 위치 */
-    right: 0; /* 오른쪽에 위치 */
-    bottom: 0; /* 하단에 위치 */
-    filter: blur(2px); /* 흐림 효과 설정 */
-    z-index: -1; /* 다른 콘텐츠 뒤에 위치하도록 설정 */
-  }
 
-
-
-
-
-  .year4 {
-    position: relative; /* 가상 요소를 위해 position 설정 */
-    width: 100%;
-    height: 100%;
-    background-color: rgb(248, 248, 248, 0.5);
-    color: black; /* 텍스트 색상 */
-    overflow: hidden; /* 가상 요소가 부모 요소를 넘지 않도록 설정 */
-  }
-  
-  .year4::before {
-    content: ""; /* 가상 요소의 내용 설정 */
-    background-image: url(../images/year4.jpg); /* 배경 이미지 설정 */
-    background-size: cover; /* 배경 이미지 크기 조정 */
-    position: absolute; /* 절대 위치 설정 */
-    top: 0; /* 상단에 위치 */
-    left: 0; /* 왼쪽에 위치 */
-    right: 0; /* 오른쪽에 위치 */
-    bottom: 0; /* 하단에 위치 */
-    filter: blur(2px); /* 흐림 효과 설정 */
-    z-index: -1; /* 다른 콘텐츠 뒤에 위치하도록 설정 */
-  }
-
-
-.star {
+.ye {
   display: flex;
-  flex-direction: column;  /* 세로 방향 배치 */
-  align-items: center;     /* 가로축 중앙 정렬 */
-  gap: 50px;              /* 각 섹션 사이 간격 */
-  margin-top: 1000px;         /* 위아래 여백 */
+  position: relative;
+  justify-content: space-around;
+  height: 600px;
 }
 
-/* 각 섹션의 기본 스타일 */
-.star > div {
-  width: 80%;            /* 또는 원하는 너비 */
-  text-align: center;    /* 내부 콘텐츠 중앙 정렬 */
+.ye > section{
+  text-align: center;
+  align-content: center;
+  gap: 100px;
+  width: 200px;
+  height: 400px;
+  background: rgb(223, 223, 223, 0.5);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-bottom: 20px; /* 섹션 간의 간격 조정 */
+  top: 200px;
 }
 
-.Goods, .Event, .Game {
-  margin-bottom: 30px;
-line-height: 100px;}
-
-
-footer {
-  display: flex;               /* 플렉스 박스 사용 */
-  flex-direction: column;      /* 세로 방향으로 정렬 */
-  align-items: center;         /* 가로축 중앙 정렬 */
-  gap: 20px;                   /* 각 줄 사이 간격 */
-  padding: 20px;               /* 푸터 여백 */
-  background-color: #f8f8f8;   /* 배경색 추가 (선택 사항) */
+.ye > section:hover{
+  background: rgb(255, 255, 255, 0.5);
+  transition: all 0.7s ease;
+  border: 1px solid black;
 }
-
-.f-line {
-  display: flex;               /* 플렉스 박스 사용 */
-  justify-content: space-between; /* 내부 요소 간격 조정 */
-  width: 100%;                /* 전체 너비 사용 */
-  max-width: 1200px;          /* 최대 너비 설정 */
-}
-
-.fl {
-  display: flex;               /* 플렉스 박스 사용 */
-  justify-content: space-between; /* 내부 요소 간격 조정 */
-  width: 100%;                /* 전체 너비 사용 */
-}
-
 

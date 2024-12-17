@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /
 }
 
 ul,
@@ -24,7 +25,9 @@ a {
 }
 body {
   background-color: #000;
-  width: 1920px;
+  width: 100%;
+  overflow-x: hidden; /* 가로 스크롤 숨김 */
+
 }
 
 .menu {

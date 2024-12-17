@@ -327,6 +327,19 @@
      
     </div>
     </footer>
+    <script>
+      document.addEventListener('wheel', function(event) {
+          if (event.ctrlKey) {
+              event.preventDefault(); // Ctrl 키와 함께 스크롤 시 확대/축소 방지
+          }
+      }, { passive: false });
+  
+      document.addEventListener('keydown', function(event) {
+          if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '0')) {
+              event.preventDefault(); // Ctrl + '+' 또는 '-' 또는 '0' 키로 확대/축소 방지
+          }
+      });
+  </script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
